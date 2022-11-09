@@ -23,10 +23,10 @@ public class DbTest {
 			connection = DbUtils.getConnection();
 			connection.setAutoCommit(false);
 			sql = connection.prepareStatement("insert into student(name, pwd, sex, birthday, address, email, money)\n"
-					+ "VALUES ('aaaa','a','a','a','a','a',0)");
+					+ "VALUES ('aaaaa','a','a','a','a','a',0)");
 			int a = sql.executeUpdate();
 			assert a == 1;
-			int i = 1 / 0;
+//			int i = 1 / 0;
 			connection.commit();
 		} catch (SQLException throwables) {
 			try {

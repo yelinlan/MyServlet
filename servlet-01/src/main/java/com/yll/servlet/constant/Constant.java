@@ -26,6 +26,7 @@ public class Constant {
 
 	public static final String ATTACH_PNG = "D:\\ideaWorkSpaceAll\\MyServlet\\out\\artifacts\\servlet_01_war_exploded\\WEB-INF\\classes\\心海.png";
 	public static final String DB_PROPERTIES = "/WEB-INF/classes/db.properties";
+	public static final String PROPERTIES = "db.properties";
 	public static final String PATH = "com/yll/servlet/心海.png";
 
 	public static final String JPG = "jpg";

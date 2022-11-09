@@ -1,7 +1,11 @@
 package com.yll.servlet.utils;
 
+import com.yll.servlet.constant.Constant;
+
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.Properties;
 
 /**
  *@项目名称: MyServlet
@@ -12,18 +16,27 @@ import java.sql.DriverManager;
  **/
 public class DbUtils {
 	public static Connection conn;
-	public static String driverName = "com.mysql.cj.jdbc.Driver";
-	public static String url = "jdbc:mysql://localhost:3306/school?useSSL=false&serverTimezone=UTC";
-	public static String root = "root";
-	public static String password = "yelinlan";
+	public static String driver;
+	public static String url;
+	public static String username;
+	public static String password;
+
 	static {
 		try {
-			Class.forName(driverName);
-			conn = DriverManager.getConnection(url, root, password);
+			InputStream in = DbUtils.class.getClassLoader().getResourceAsStream(Constant.PROPERTIES);
+			Properties properties = new Properties();
+			properties.load(in);
+			driver = properties.getProperty("driver");
+			url = properties.getProperty("url");
+			username = properties.getProperty("username");
+			password = properties.getProperty("password");
+			Class.forName(driver);
+			conn = DriverManager.getConnection(url, username, password);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 	public static Connection getConnection() {
 		return conn;
 	}
