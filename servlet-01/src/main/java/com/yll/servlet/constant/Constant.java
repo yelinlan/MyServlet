@@ -4,7 +4,7 @@ package com.yll.servlet.constant;
  *@项目名称: MyServlet
  *@类名称: Constant
  *@类描述:
- *@创建人: quanyixiang
+ *@创建人: yll
  *@创建时间: 2022/11/9 19:45
  **/
 public class Constant {

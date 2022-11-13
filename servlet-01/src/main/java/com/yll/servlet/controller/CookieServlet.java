@@ -22,7 +22,7 @@ import java.util.Properties;
  *@项目名称: MyServlet
  *@类名称: HelloServlet
  *@类描述:
- *@创建人: quanyixiang
+ *@创建人: yll
  *@创建时间: 2022/11/6 14:47
  **/
 public class CookieServlet extends HttpServlet {

@@ -15,7 +15,7 @@ import java.net.URLEncoder;
  *@项目名称: MyServlet
  *@类名称: DownLoad
  *@类描述:
- *@创建人: quanyixiang
+ *@创建人: yll
  *@创建时间: 2022/11/6 14:47
  **/
 public class DownLoad extends HttpServlet {

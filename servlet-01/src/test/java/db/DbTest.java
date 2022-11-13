@@ -11,7 +11,7 @@ import java.sql.SQLException;
  *@项目名称: MyServlet
  *@类名称: main
  *@类描述:
- *@创建人: quanyixiang
+ *@创建人: yll
  *@创建时间: 2022/11/9 20:34
  **/
 public class DbTest {
